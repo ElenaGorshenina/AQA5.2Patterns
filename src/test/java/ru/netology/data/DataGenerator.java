@@ -6,7 +6,6 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
-import ru.netology.data.RegistrationInfo;
 
 import java.util.Locale;
 
@@ -62,5 +61,16 @@ public class DataGenerator {
             return user;
         }
 
+        public static RegistrationInfo userNoValidLogin() {
+            RegistrationInfo user = new RegistrationInfo(getRandomLogin(), getRandomPassword(), "active");
+            setUpAll(user);
+            return user;
+        }
+
+        public static RegistrationInfo userNoValidPassword() {
+            RegistrationInfo user = new RegistrationInfo(getRandomLogin(), getRandomPassword(), "active");
+            setUpAll(user);
+            return user;
+        }
     }
 }

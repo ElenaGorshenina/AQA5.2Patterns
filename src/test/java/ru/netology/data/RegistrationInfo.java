@@ -10,6 +10,4 @@ public class RegistrationInfo {
     private final String password;
     private final String status;
 
-
-
 }
