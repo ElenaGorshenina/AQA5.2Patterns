@@ -1,4 +1,4 @@
-package ru.netology;
+package ru.netology.data;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 public class RegistrationInfo {
     private final String login;
     private final String password;
-//    private final String status;
+    private final String status;
 
 
 
